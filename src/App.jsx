@@ -8,7 +8,6 @@ import Layout from "./component/Layout";
 
 const App = () => {
   return (
-    <Router>
       <Layout> {/* Layout should include Navbar and ThemeToggle inside */}
         <Routes>
           <Route path="/" element={<Home />} />
@@ -17,7 +16,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
-    </Router>
   );
 };
 

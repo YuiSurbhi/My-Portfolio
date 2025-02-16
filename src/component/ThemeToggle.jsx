@@ -14,7 +14,7 @@ const ThemeToggle = () => {
   }, [isDarkMode]);
 
   return (
-    <div className="absolute top-8 right-10">
+    <div className="absolute top-12 right-15 z-55">
       <button
         onClick={() => setIsDarkMode(!isDarkMode)} // Toggle between dark and light modes
         className="p-3 rounded-full bg-gray-200 dark:bg-gray-800 shadow-md focus:outline-none"

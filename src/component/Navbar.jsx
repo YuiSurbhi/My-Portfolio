@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="fixed bottom-8 left-11 text-left">
+    <nav className="fixed bottom-8 left-11 text-left z-55">
       <ul className="space-y-4">
         <li className="uppercase">
           <NavLink 

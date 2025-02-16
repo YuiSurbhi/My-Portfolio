@@ -6,4 +6,11 @@ body {
     background-color: #ffffff; 
     font-family: "Montserrat", sans-serif; 
   }
+
+@layer utilities {
+  .outline-text {
+    -webkit-text-stroke: 2px black; /* Creates the outline effect */
+    color: transparent;
+  }
+}
   

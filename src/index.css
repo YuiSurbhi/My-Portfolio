@@ -13,4 +13,8 @@ body {
     color: transparent;
   }
 }
-  
+
+.outline-text {
+  color: white;
+  -webkit-text-stroke: 2px black;
+}

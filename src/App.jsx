@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./component/About";
 import Projects from "./component/Projects";
 import Contact from "./component/Contact";
@@ -17,7 +17,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
-      </Router>
+    </Router>
   );
 };
 

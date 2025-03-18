@@ -14,15 +14,15 @@ const ThemeToggle = () => {
   }, [isDarkMode]);
 
   return (
-    <div className="absolute top-12 right-15 z-55">
+    <div className="absolute top-7 right-7 sm:top-12 sm:right-15 z-55">
       <button
         onClick={() => setIsDarkMode(!isDarkMode)} // Toggle between dark and light modes
-        className="p-3 rounded-full bg-gray-200 dark:bg-gray-800 shadow-md focus:outline-none"
+        className="p-2 sm:p-3 rounded-full bg-gray-200 dark:bg-gray-800 shadow-md focus:outline-none"
       >
         {isDarkMode ? (
-          <FiSun className="w-6 h-6 text-yellow-500" />
+          <FiSun className="w-4 h-4 sm:w-6 sm:h-6 text-yellow-500" />
         ) : (
-          <FiMoon className="w-6 h-6 text-gray-100" />
+          <FiMoon className="w-4 h-4 sm:w-6 sm:h-6 text-gray-100" />
         )}
       </button>
     </div>
@@ -30,3 +30,4 @@ const ThemeToggle = () => {
 };
 
 export default ThemeToggle;
+ 

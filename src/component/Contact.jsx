@@ -11,7 +11,6 @@ const Contact = () => {
       <div className='w-1/4 p-6 flex flex-col items-center justify-end relative'>
         {/* Flower Image Above */}
         <img src="/img/flowers.png" alt="Flower" className="w-80 mb-[-1rem] ml-[12rem] z-20" />
-
         {/* "Say hi!" Text Design */}
         <h1 className="text-9xl font-extrabold relative leading-none mt-0 top-[-1rem] left-40 z-10">
           <span className='outline-text'>Say</span>
@@ -20,7 +19,7 @@ const Contact = () => {
       </div>
 
       {/* Contact Form */}
-      <div className='flex-1 p-12 relative'>
+      <div className='flex-1 p-12 relative '>
         <div className='border-l-8 border-black h-132 absolute left-20 top-30'></div>
         <div className='border-t-8 border-black w-4/4 absolute top-30 left-20'></div>
         <form className="space-y-6 max-w-md mx-auto mt-35 ml-25">
@@ -74,3 +73,5 @@ const Contact = () => {
 }
 
 export default Contact
+
+

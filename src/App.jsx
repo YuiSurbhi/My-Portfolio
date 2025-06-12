@@ -1,27 +1,26 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./component/About";
 import Projects from "./component/Projects";
 import Contact from "./component/Contact";
 import Home from "./component/Home";
 import Layout from "./component/Layout";
+import { Element } from "react-scroll"; // For scroll targets
 
 const App = () => {
   return (
-    <Router>
-      <Layout> {/* Layout should include Navbar and ThemeToggle inside */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Layout>
-    </Router>
+    <Layout>
+      <div className="scroll-smooth">
+        <Element name="home"><Home /></Element>
+        <Element name="about"><About /></Element>
+        <Element name="projects"><Projects /></Element>
+        <Element name="contact"><Contact /></Element>
+      </div>
+    </Layout>
   );
 };
 
 export default App;
+
 
 
 

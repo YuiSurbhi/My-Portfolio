@@ -1,41 +1,57 @@
 import React from "react";
-import { NavLink } from "react-router-dom";  
+import { Link } from "react-scroll";  
 
 const Navbar = () => {
   return (
     <nav className="fixed bottom-8 left-11 text-left z-55">
       <ul className="space-y-4">
-        <li className="uppercase">
-          <NavLink 
-            to="/" 
-            className={({ isActive }) => isActive ? "text-black font-semibold" : "text-gray-400 hover:text-black"}
+        <li className="uppercase text-sm md:text-[16px]">
+          <Link 
+            to="home" 
+            smooth={true} 
+            duration={600} 
+            spy={true}
+            activeClass="active"
+            className="cursor-pointer text-gray-400 hover:text-black hover:font-bold"
           >
             Home
-          </NavLink>
+          </Link>
         </li>
-        <li className="uppercase">
-          <NavLink 
-            to="/about" 
-            className={({ isActive }) => isActive ? "text-black font-semibold" : "text-gray-400 hover:text-black"}
+        <li className="uppercase text-sm md:text-[16px]">
+          <Link 
+            to="about" 
+            smooth={true} 
+            duration={600} 
+            spy={true}
+            activeClass="active"
+            className="cursor-pointer text-gray-400 hover:text-black hover:font-bold"
           >
             About
-          </NavLink>
+          </Link>
         </li>
-        <li className="uppercase">
-          <NavLink 
-            to="/projects" 
-            className={({ isActive }) => isActive ? "text-black font-semibold" : "text-gray-400 hover:text-black"}
+        <li className="uppercase text-sm md:text-[16px]">
+          <Link 
+            to="projects" 
+            smooth={true} 
+            duration={600} 
+            spy={true}
+            activeClass="active"
+            className="cursor-pointer text-gray-400 hover:text-black hover:font-bold"
           >
             Projects
-          </NavLink>
+          </Link>
         </li>
-        <li className="uppercase">
-          <NavLink 
-            to="/contact" 
-            className={({ isActive }) => isActive ? "text-black font-semibold" : "text-gray-400 hover:text-black"}
+        <li className="uppercase text-sm md:text-[16px]">
+          <Link 
+            to="contact" 
+            smooth={true} 
+            duration={600} 
+            spy={true}
+            activeClass="active"
+            className="cursor-pointer text-gray-400 hover:text-black hover:font-bold"
           >
             Say Hi!
-          </NavLink>
+          </Link>
         </li>
       </ul>
     </nav>

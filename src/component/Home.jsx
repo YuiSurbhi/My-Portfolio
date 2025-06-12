@@ -71,7 +71,7 @@ const Home = () => {
           <p className="text-gray-500 text-lg mb-4 intro-text text-start">
             Namaste! I am Surbhi Verma
           </p>
-          <div className="overflow-hidden">
+          <div >
             <h1 className="text-black text-[clamp(3rem,10vw,8rem)] leading-none font-semibold heading-part">
               FRONT-
               <span

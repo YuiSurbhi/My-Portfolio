@@ -259,7 +259,7 @@ const Projects = () => {
         <motion.img
           src="/img/blue-flower.png"
           alt="Decorative Flower"
-          className="absolute bottom-0 right-3 md:right-20 lg:right-20 w-[150px] md:w-[280px] lg:w-[380px] z-20 drop-shadow-xl md:mt-5"
+          className="absolute bottom-[-3rem] md:bottom-0 right-0 md:right-20 lg:right-20 w-[150px] md:w-[280px] lg:w-[380px] z-20 drop-shadow-xl md:mt-5"
           ref={flowerRef}
           drag
           dragConstraints={{ 

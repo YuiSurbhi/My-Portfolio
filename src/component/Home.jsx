@@ -2,8 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import Navbar from './Navbar';
-// import ThemeToggle from './ThemeToggle';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);

@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import Navbar from "./Navbar";
-import ThemeToggle from "./ThemeToggle";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
@@ -124,7 +123,6 @@ const About = () => {
       {/* Navbar and Theme Toggle */}
       <header className="absolute top-0 left-0 w-full flex justify-between p-4 md:p-6">
         <Navbar />
-        <ThemeToggle />
       </header>
 
       {/* About Section */}

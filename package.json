@@ -16,6 +16,7 @@
     "framer-motion": "^12.6.2",
     "gsap": "^3.13.0",
     "lightningcss": "^1.29.3",
+    "locomotive-scroll": "^5.0.0-beta.21",
     "motion": "^12.10.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

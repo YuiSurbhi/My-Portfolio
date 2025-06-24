@@ -1,5 +1,5 @@
-import { AnimatePresence, delay, motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";  
 
 const Navbar = () => {

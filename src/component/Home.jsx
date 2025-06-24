@@ -56,13 +56,6 @@ const Home = () => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
       >
-        {/* Overlay */}
-        {/* <motion.div */}
-          {/* className="absolute inset-0 bg-black bg-opacity-30" */}
-          {/* initial={{ opacity: 0 }} */}
-          {/* animate={{ opacity: 0.3 }} */}
-          {/* transition={{ duration: 2 }} */}
-        {/* ></motion.div> */}
 
         {/* Text Content */}
         <div className="relative z-10 leading-tight drop-shadow-lg text-center px-4">

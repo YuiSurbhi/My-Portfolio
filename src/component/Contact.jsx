@@ -1,7 +1,7 @@
-import { delay, motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { useEffect } from 'react';
 import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaMapPin } from 'react-icons/fa';
 
@@ -117,7 +117,7 @@ const Contact = () => {
     >
       
       <div 
-        id="say-hi" 
+        id="contact" 
         className="flex flex-col md:flex-row min-h-[350px] sm:min-h-[400px] relative"
       >
         

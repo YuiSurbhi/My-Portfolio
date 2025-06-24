@@ -176,7 +176,7 @@ const Projects = () => {
           >
             <div className="relative">
               <img 
-                src="/img/project1.png" 
+                src="/img/Ss.jpeg" 
                 alt="Project 1" 
                 className="rounded-md w-full h-85 object-cover" 
               />
@@ -186,8 +186,8 @@ const Projects = () => {
                 animate = {{ opacity:1, x:0}}
                 transition={{delay: 0.3, duration:0.5}}
               >
-                <h2 className="text-sm font-semibold">Project 1</h2>
-                <p className="text-xs text-gray-700">Description</p>
+                <h2 className="text-sm font-semibold text-zinc-200">Project 1</h2>
+                <p className="text-xs text-gray-200">Description</p>
               </motion.div>
               <motion.button 
                 className="absolute top-1 right-1 bg-gray-200 p-2 rounded-md hover:bg-gray-300 transition drop-shadow-lg cursor-pointer"
@@ -210,7 +210,7 @@ const Projects = () => {
           >
             <div className="relative">
               <img 
-                src="/img/project2.png" 
+                src="/img/Ss2.jpeg" 
                 alt="Project 2" 
                 className="rounded-md w-full h-85 object-cover" 
               />
@@ -221,7 +221,7 @@ const Projects = () => {
                 transition={{delay:0.3, duration:0.5}}
               >
                 <h2 className="text-sm font-semibold">Project 2</h2>
-                <p className="text-xs text-gray-700">Description</p>
+                <p className="text-xs">Description</p>
               </motion.div>
               <motion.button 
                 className="absolute top-1 right-1 bg-gray-200 p-2 rounded-md hover:bg-gray-300 transition drop-shadow-lg cursor-pointer"

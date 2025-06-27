@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
-import { motion } from "framer-motion";
+import {  motion } from "framer-motion";
 
 if(typeof window !== "undefined"){
   gsap.registerPlugin(ScrollTrigger, SplitText)
@@ -113,14 +113,13 @@ const About = () => {
     },
   }
 
-
   return (
     <div 
       id="about" 
       className="relative min-h-screen bg-white snap-start "
       ref={sectionRef}
     >
-      {/* Navbar and */}
+      {/* Navbar */}
       <header className="absolute top-0 left-0 w-full flex justify-between p-4 md:p-6">
         <Navbar />
       </header>
@@ -132,17 +131,16 @@ const About = () => {
           className="absolute top-20 left-2 md:left-44 flex items-center font-extrabold uppercase z-20 ml-10"
           ref={headingRef}
         >
-          <span className="text-black text-[min(8rem,10vw)]
-            tracking-widest font-normal stroke-2 stroke-black text-transparent outline-text drop-shadow-lg flex">
+          {/* ABO - stays outlined always */}
+          <span className="text-[min(8rem,10vw)] tracking-widest font-normal text-transparent stroke-2 stroke-black outline-text drop-shadow-lg flex">
             <span className="about-letter">A</span>
             <span className="about-letter">B</span>
             <span className="about-letter">O</span>
-          </span>
-          <span className="text-gray-400 opacity-50 text-[min(8rem,10vw)] tracking-widest flex">
-            <span className="about-letter">U</span>
-            <span className="about-letter">T</span>
-          </span>
+            <span className="ut-outline about-letter">U</span>
+            <span className="ut-outline about-letter">T</span>
+          </span>        
         </h1>
+
 
         {/* Square Border Box */}
         <motion.div 
@@ -192,11 +190,6 @@ const About = () => {
             bottom:0
           }}
           dragElastic={0.1}
-          // whileHover={{
-          //   scale:1.05,
-          //   rotate:2,
-          //   transition: {duration: 0.3}
-          // }}
         />
       </section>
     </div>
@@ -204,5 +197,3 @@ const About = () => {
 };
 
 export default About;
-//className="text-black text-[min(8rem,10vw)]
-            //tracking-widest font-medium stroke-2 stroke-black text-transparent outline-text"

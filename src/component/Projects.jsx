@@ -191,7 +191,7 @@ const Projects = () => {
       <div className="flex-1 p-6 md:p-12 relative max-w-7xl mx-auto">
         {/* Heading */}
         <h1 
-          className="text-[min(8rem,10vw)] font-bold uppercase tracking-widest relative inline-block z-10 text-left mr-5"
+          className="text-[min(8rem,10vw)] font-normal uppercase tracking-widest relative inline-block z-10 text-left mr-5"
           ref={headingRef}
         >
           <span className=" text-transparent stroke-2 stroke-black outline-text">PROJECTS</span>
@@ -204,7 +204,7 @@ const Projects = () => {
 
         {/* Project Cards */}
         <motion.div 
-          className="flex flex-wrap gap-6 mt-0 ml-10 justify-center items-start drop-shadow-lg"
+          className="flex flex-wrap gap-6 mt-0 ml-10 justify-center items-start drop-shadow-lg will-change-transform"
           ref={projecsRef}
           variants={containerVariants}
           initial="hidden"

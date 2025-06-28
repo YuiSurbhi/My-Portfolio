@@ -105,7 +105,7 @@ const About = () => {
     visible:{
       opacity:1,
       scale:1,
-      trasition: {
+      transition: {
         duration: 0.8,
         ease: "easeOut",
         delay: 0.3
@@ -132,12 +132,12 @@ const About = () => {
           ref={headingRef}
         >
           {/* ABO - stays outlined always */}
-          <span className="text-[min(8rem,10vw)] tracking-widest font-normal text-transparent stroke-2 stroke-black outline-text drop-shadow-lg flex">
+          <span className="text-[min(8rem,10vw)] tracking-widest font-normal text-transparent stroke-2 stroke-black outline-text drop-shadow-lg flex will-change-transform">
             <span className="about-letter">A</span>
             <span className="about-letter">B</span>
             <span className="about-letter">O</span>
-            <span className="ut-outline about-letter">U</span>
-            <span className="ut-outline about-letter">T</span>
+            <span className="about-letter">U</span>
+            <span className="about-letter">T</span>
           </span>        
         </h1>
 
@@ -181,6 +181,7 @@ const About = () => {
           src="/img/leaves.png"
           alt="Decorative Plant"
           className="absolute bottom-0 right-0 w-[200px] md:w-[280px] lg:w-[470px] opacity-95 z-30 drop-shadow-lg"
+          loading="lazy"
           ref={plantRef}
           drag
           dragConstraints={{

@@ -55,6 +55,7 @@ const Home = () => {
         initial={{ scale: 1.1, opacity: 0.8 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
+        loading="lazy"
       >
 
         {/* Text Content */}
@@ -63,13 +64,12 @@ const Home = () => {
             Namaste! I am Surbhi Verma
           </p>
           <div >
-            <h1 className="text-black text-[clamp(3rem,10vw,8rem)] leading-none font-semibold heading-part">
+            <h1 className="text-black text-[clamp(3rem,10vw,8rem)] leading-none font-normal heading-part">
               FRONT-
               <span
                 className="text-transparent italic end-text"
                 style={{
                   WebkitTextStroke: '1px black',
-                  fontWeight: '900',
                 }}
               >
                 END
@@ -77,7 +77,7 @@ const Home = () => {
             </h1>
           </div>
           <div className="overflow-hidden">
-            <h1 className="text-black text-[clamp(3rem,10vw,8rem)] leading-none font-semibold heading-part">
+            <h1 className="text-black text-[clamp(3rem,10vw,8rem)] leading-none font-normal heading-part">
               DEVELOPER
             </h1>
           </div>

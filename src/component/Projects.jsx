@@ -1,10 +1,11 @@
 import { motion, AnimatePresence } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { GoArrowRight } from "react-icons/go";
 import { SlArrowRight } from "react-icons/sl";
 import { HiX, HiExternalLink } from "react-icons/hi"
+import { LuGithub } from "react-icons/lu";
 
 if (typeof window !== "undefined"){
   gsap.registerPlugin(ScrollTrigger)
@@ -28,7 +29,7 @@ const Projects = () => {
       image: "/img/Ss.jpeg",
       fullDescription: "A modern portfolio website built with HTML5 and Tailwind CSS. This project showcases clean design principles and responsive layouts. The website features smooth animations, optimized performance, and a mobile-first approach to ensure great user experience across all devices.\n\nThe design emphasizes simplicity and elegance while maintaining functionality. It includes sections for showcasing projects, skills, and contact information with a focus on accessibility and SEO optimization.",
       technologies: ["HTML5", "Tilwind CSS"],
-      liveUrl: "#"
+      liveUrl: "https://tailwindcss-portfolio-seven.vercel.app/"
     },
     {
       id: 2,
@@ -37,7 +38,7 @@ const Projects = () => {
       image: "/img/Ss2.jpeg",
       fullDescription: "A sophisticated clone of the Zentry metagame platform built with modern React technologies. This project demonstrates advanced animation techniques using GSAP and Framer Motion to create engaging user interactions.\n\nThe application features complex state management, responsive design, and smooth page transitions. It showcases the ability to recreate complex UI/UX designs while maintaining performance and accessibility standards.",
       technologies: ["React", "Tailwind CSS", "Gsap", "Framer Motion"],
-      liveUrl: "#"
+      liveUrl: "https://zentry-awward-win-website.vercel.app/"
     }
   ]
 
@@ -257,25 +258,27 @@ const Projects = () => {
           ))}
           
           {/* GitHub Button */}
-          <motion.button 
+          <motion.a
             className="bg-gray-200 rounded-xl p-3 md:p-3 lg:p-4 text-sm font-medium flex items-center gap-2 hover:bg-gray-300 transition w-40 md:w-55 justify-between md:mb-35 lg:mb-0 md:mr-80 lg:mr-0 drop-shadow-lg cursor-pointer"
             variants={buttonVariants}
             whileHover="hover"
             whileTap="tap"
+            href="https://github.com/YuiSurbhi"
           >
-            GitHub 
+            <LuGithub size={20} />
+            Github
             <motion.div
               animate={{x: [0, 5, 0] }}
               transition={{
                 repeat: Number.POSITIVE_INFINITY,
-                duration:1.5,
-                repeatType:"mirror",
-                ease:"easeInOut"
+                duration: 1.5,
+                repeatType: "mirror",
+                ease: "easeInOut"
               }}
             >
               <SlArrowRight size={16} />
             </motion.div>
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         {/* Decorative Flower Image */}

@@ -3,7 +3,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef } from 'react';
 import { useEffect } from 'react';
-import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaMapPin } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaEnvelope, FaMapPin } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 
 if(typeof window !== "undefined"){
   gsap.registerPlugin(ScrollTrigger)
@@ -228,33 +229,33 @@ const Contact = () => {
           {/* Social Icons */}
           <div className='p-2 sm:pt-4'>
             <div className="flex gap-6 sm:gap-8 justify-center md:justify-center">
+
+              <motion.a
+                href='https://www.instagram.com/yuisurbhi/'
+                aria-label='Insta Profile'
+                className='text-black hover:text-red-400 transition-transform transform hover:scale-110'
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <FaInstagram 
+                  size={20}
+                  className='sm:w-6 sm:h-6'
+                />
+              </motion.a>
               <motion.a 
-                href="#" 
+                href="https://x.com/_surbhi_verma" 
                 aria-label='Twitter Profile' 
                 className="text-black hover:text-red-400 transition-transform transform hover:scale-110"
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <FaTwitter 
+                <FaXTwitter 
                   size={20} 
                   className='sm:w-6 sm:h-6'
                 />
               </motion.a>
               <motion.a 
-                href="#" 
-                aria-label='Github Profile' 
-                className="text-black hover:text-red-400 transition-transform transform hover:scale-110"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <FaGithub 
-                  size={20} 
-                  className='sm:w-6 sm:h-6'
-
-                />
-              </motion.a>
-              <motion.a 
-                href="#" 
+                href="https://www.linkedin.com/in/surbhiverma03/" 
                 aria-label='LinkedIn Profile' 
                 className="text-black hover:text-red-400 transition-transform transform hover:scale-110"
                 whileHover={{ scale: 1.2 }}

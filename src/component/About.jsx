@@ -169,10 +169,9 @@ const About = () => {
             >
               Surbhi Verma
             </motion.span>
-            , currently pursuing a BCA degree.
-            I discovered my love for web development while browsing through Awwwards.
-            Inspired by the innovative and visually stunning websites featured there,
-            I decided to pursue a career in front-end development. Join me on my journey of learning and growing!
+             , a front-end web developer passionate about creating clean, responsive, and visually engaging websites. Inspired by the creativity on Awwwards, I began exploring web development and have been learning and growing ever since.
+             <br/>
+Join me on my journey as I bring ideas to life—one line of code at a time!
           </p>
         </motion.div>
 

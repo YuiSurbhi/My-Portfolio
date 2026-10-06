@@ -187,7 +187,7 @@ const Contact = () => {
                   Email
                 </p>
                 <p className='font-medium text-slate-600 text-xs sm:text-sm'>
-                  xyz@gmail.com
+                  vermasurbhi.312@gmail.com
                 </p>
               </div>
             </motion.div>
